@@ -1,0 +1,44 @@
+:root {
+  --color-brand-primary: #0c513f;
+  --color-brand-accent: #ffc501;
+  --color-surface-page: #fefbf0;
+  --color-surface-card: #ffffff;
+  --color-text-default: #0a4336;
+  --color-text-muted: #587269;
+  --color-border-default: #dce7df;
+
+  --font-family-base: Arial, sans-serif;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  --radius-card: 20px;
+  --radius-button: 999px;
+  --layout-max-width: 1150px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-surface-page);
+  color: var(--color-text-default);
+}
+.container { max-width: var(--layout-max-width); margin: 0 auto; padding: 0 var(--space-md); }
+.header { background: var(--color-surface-card); padding: var(--space-md) 0; border-bottom: 1px solid var(--color-border-default); }
+.header__inner { display: flex; justify-content: space-between; align-items: center; }
+.main-nav { display: flex; gap: var(--space-lg); }
+.nav-item { text-decoration: none; color: var(--color-text-default); font-weight: bold; }
+.btn { padding: 10px 20px; border-radius: var(--radius-button); border: none; font-weight: bold; cursor: pointer; }
+.btn--primary { background: var(--color-brand-accent); color: var(--color-text-default); }
+.btn--secondary { background: transparent; border: 1px solid var(--color-text-default); }
+
+.main-content { display: flex; flex-direction: column; gap: var(--space-3xl); padding: var(--space-lg) var(--space-md); }
+.hero { background: var(--color-brand-primary); color: #fff; padding: var(--space-2xl); border-radius: var(--radius-card); }
+.hero h1 { font-size: 42px; margin: var(--space-sm) 0 var(--space-md); }
+.search-bar { display: flex; gap: var(--space-sm); background: #fff; padding: var(--space-sm); border-radius: var(--radius-button); max-width: 600px; margin-top: var(--space-lg); }
+.search-bar input { flex: 1; border: none; outline: none; padding-left: var(--space-md); }
+
+.service-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-md); margin-top: var(--space-md); }
+.service-card { background: var(--color-surface-card); padding: var(--space-lg); border-radius: var(--radius-card); border: 1px solid var(--color-border-default); }
