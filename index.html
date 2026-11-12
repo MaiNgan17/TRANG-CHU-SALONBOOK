@@ -9,38 +9,136 @@
 <body>
   <header class="header">
     <div class="container header__inner">
-      <div class="logo">SalonBook</div>
+      <div class="logo">
+        <span class="logo-icon">✂</span> SalonBook
+      </div>
       <nav class="main-nav">
         <a href="#" class="nav-item active">Trang chủ</a>
         <a href="#" class="nav-item">Khám phá salon</a>
         <a href="#" class="nav-item">Dịch vụ</a>
         <a href="#" class="nav-item">Giới thiệu</a>
       </nav>
-      <button class="btn btn--secondary">Tài khoản</button>
+      <button class="btn btn--secondary">👤 Tài khoản</button>
     </div>
   </header>
 
   <main class="container main-content">
+    <!-- Hero Section -->
     <section class="hero">
-      <span class="overline">KHÁM PHÁ SALON ĐẸP</span>
-      <h1>Đẹp theo cách bạn chọn, đặt lịch thật dễ dàng.</h1>
-      <p>Tìm salon phù hợp, chọn dịch vụ yêu thích và sẵn sàng cho diện mạo mới của bạn.</p>
-      <form class="search-bar">
-        <input type="text" placeholder="Tên salon, dịch vụ hoặc khu vực...">
-        <button type="submit" class="btn btn--primary">Tìm kiếm</button>
-      </form>
+      <div class="hero__content">
+        <span class="hero__badge">KHÁM PHÁ SALON ĐẸP</span>
+        <h1>Đẹp theo cách bạn chọn,<br>đặt lịch thật dễ dàng.</h1>
+        <p>Tìm salon phù hợp, chọn dịch vụ yêu thích và sẵn sàng cho diện mạo mới của bạn.</p>
+        <form class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Tên salon, dịch vụ hoặc khu vực...">
+          <button type="submit" class="btn btn--primary">Tìm kiếm</button>
+        </form>
+      </div>
+      <div class="hero__illustration">
+        <div class="illus-card">
+          <div class="illus-avatar">💇‍♀️</div>
+          <span class="illus-tag">STYLE</span>
+        </div>
+      </div>
     </section>
 
-    <section class="service-section">
-      <span class="overline">DỊCH VỤ NỔI BẬT</span>
-      <h2>Chọn dịch vụ bạn yêu thích</h2>
+    <!-- Service List -->
+    <section class="section">
+      <div class="section__head">
+        <div>
+          <span class="overline">DỊCH VỤ NỔI BẬT</span>
+          <h2>Chọn dịch vụ bạn yêu thích</h2>
+          <p class="section__desc">Bắt đầu từ dịch vụ phù hợp với nhu cầu của bạn.</p>
+        </div>
+      </div>
       <div class="service-grid">
-        <article class="service-card"><h3>Cắt & tạo kiểu</h3><p>Tạo phong cách mới</p></article>
-        <article class="service-card"><h3>Nhuộm tóc</h3><p>Làm mới diện mạo</p></article>
-        <article class="service-card"><h3>Gội & thư giãn</h3><p>Chăm sóc nhẹ nhàng</p></article>
-        <article class="service-card"><h3>Phục hồi tóc</h3><p>Dưỡng tóc chắc khỏe</p></article>
+        <article class="service-card">
+          <div class="service-icon icon-green">✂️</div>
+          <h3>Cắt & tạo kiểu</h3>
+          <p>Tạo phong cách mới</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon icon-yellow">💧</div>
+          <h3>Nhuộm tóc</h3>
+          <p>Làm mới diện mạo</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon icon-green">🧴</div>
+          <h3>Gội & thư giãn</h3>
+          <p>Chăm sóc nhẹ nhàng</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon icon-yellow">✨</div>
+          <h3>Phục hồi tóc</h3>
+          <p>Dưỡng tóc chắc khỏe</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Salon List -->
+    <section class="section">
+      <div class="section__head section__head--row">
+        <div>
+          <span class="overline">ĐỊA ĐIỂM DÀNH CHO BẠN</span>
+          <h2>Salon được quan tâm</h2>
+          <p class="section__desc">Khám phá những không gian làm đẹp nổi bật.</p>
+        </div>
+        <a href="#" class="link-all">Xem tất cả</a>
+      </div>
+      <div class="salon-grid">
+        <article class="salon-card">
+          <div class="salon-img" style="background: #d8cfc4;">THE HAIR SPACE</div>
+          <div class="salon-body">
+            <h3>The Hair Space</h3>
+            <p class="salon-sub">Cắt & tạo kiểu · Nhuộm tóc</p>
+            <div class="salon-footer">
+              <span class="salon-price"><small>Từ</small> <strong>150.000đ</strong></span>
+              <button class="btn btn--primary btn--sm">Xem chi tiết</button>
+            </div>
+          </div>
+        </article>
+        <article class="salon-card">
+          <div class="salon-img" style="background: #c5cdd4;">SẮC VIỆT HAIR SALON</div>
+          <div class="salon-body">
+            <h3>Sắc Việt Hair Salon</h3>
+            <p class="salon-sub">Ảnh salon do nhóm cung cấp</p>
+            <div class="salon-footer">
+              <span class="salon-price"><strong>Giá theo dịch vụ</strong></span>
+              <button class="btn btn--primary btn--sm">Xem chi tiết</button>
+            </div>
+          </div>
+        </article>
+        <article class="salon-card">
+          <div class="salon-img" style="background: #cfd6dc;">KHÁNH SALON</div>
+          <div class="salon-body">
+            <h3>Khánh Salon</h3>
+            <p class="salon-sub">Ảnh salon do nhóm cung cấp</p>
+            <div class="salon-footer">
+              <span class="salon-price"><strong>Giá theo dịch vụ</strong></span>
+              <button class="btn btn--primary btn--sm">Xem chi tiết</button>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="footer__logo">SalonBook</div>
+        <p class="footer__tagline">Đặt lịch làm đẹp dễ dàng hơn.</p>
+      </div>
+      <div class="footer__right">
+        <div class="footer__links">
+          <a href="#">Trang chủ</a>
+          <a href="#">Khám phá salon</a>
+          <a href="#">Liên hệ</a>
+        </div>
+        <p class="footer__copy">© SalonBook - Bản thiết kế sơ bộ / Stage 01</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
